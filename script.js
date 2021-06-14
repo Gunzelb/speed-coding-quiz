@@ -111,10 +111,9 @@ function quizGame() {
   answer3.on('click', null, answer3.text(), compareAnswer);
 }
 
-// start.on('click', function(event) {
-//   clock = setInterval(timer, 1000);
-//   questionEl.empty();
-//   initialize();
-//   quizGame();
-// });
-highScore();
+start.on('click', function() {
+  clock = setInterval(timer, 1000);
+  questionEl.empty();
+  initialize();
+  quizGame();
+});
