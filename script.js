@@ -19,7 +19,7 @@ var questionIndex = 0;
 function timer() {
   time--;
   timerEl.text(`Time left: ${time}`);
-  if (time === 0) {
+  if (time <= 0) {
     clearInterval(clock);
     gameOver();
   }
